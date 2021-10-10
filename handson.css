@@ -1,0 +1,131 @@
+*{
+  box-sizing: border-box;
+}
+
+.navbar{
+    width:100%;
+    min-height:auto;
+    padding: 10px 10px;
+    display: flex;
+    justify-content:flex-end ;
+    margin-bottom: 50px;
+    background-color:gray   
+}
+
+.header{
+    margin: auto;
+    width: 80%;
+    height: 220px;
+    border:10px solid blue;
+    background-color: green;
+    font-size: 30px;
+    text-align:center;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+
+}
+
+h1{
+  font-size: 30px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+  body {
+    background: purple;
+  }
+  
+  .header{
+    background-color: violet;
+    border:15px solid red;
+    width: 70% ;
+    height: 180px;
+  }
+  
+  .navbar{
+    display:inline-block;
+    background: cyan;
+    padding: 0px;
+    
+  }
+  .navbar a{
+    color: black;
+    display:flex;  
+    justify-content:center;
+    border: 0.1px solid darkcyan;
+    padding:10px;
+    margin: 0px;
+  }
+  h1{
+  display: none;
+  }
+  h2:after{
+  content:"Did you realize, you made magic!";
+  font-size: 20px;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 600px) {
+  body {
+    background: orange;
+  }
+  .header{
+    width:80%; 
+  }
+  h1{
+    font-size: 20px;
+    
+  }
+  .navbar{
+    display: flex;
+    justify-content: space-around;
+    
+  }
+
+  .navbar a{
+    display: flex;
+    justify-content: space-around;
+    color: black;
+  }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 750px) {
+  body {
+    background:olive;
+  }
+  h1{font-size: 20px; 
+    margin-top: 80px;
+  }
+  .header{
+      width: 80%;
+  }
+}
+@media only screen and (min-width: 992px) {
+    body {
+      background:white;
+    }
+    h1{font-size: 20px; 
+      margin-top: 80px;
+    }
+    .header{
+        width: 90%;
+    }
+    .navbar a{
+      display: flex;
+      color:white;
+    }
+
+    .navbar{
+      display: flex;
+      ;
+      justify-content:flex-end;
+      
+    }
+} 
